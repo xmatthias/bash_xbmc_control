@@ -111,6 +111,11 @@ function usage {
 }
 #start actual script
 
+#start URL if supplied as argument.
+if [ "$1" != "" ]; then
+  readURL $1
+fi
+
 usage
 while read -s -n 1 command; do
 #usage
