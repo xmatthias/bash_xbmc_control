@@ -104,6 +104,7 @@ function usage {
   echo "g: select"
   echo "h: back"
   echo "v: show Version"
+  echo "?: show usage"
   echo "q: quit"
   echo
   echo
@@ -131,6 +132,7 @@ case "$command" in
   'g') Iselect ;;
   'h') IBack ;;
   'v') echo "Script-Version: $VERSION";;
+  '?') usage ;;
   'q') echo "quitting"; exit;;
         
 esac
