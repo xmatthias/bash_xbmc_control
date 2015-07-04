@@ -100,7 +100,7 @@ function usage {
   echo "usage:"
   echo "o: open file or stream"
   echo "p: pause/resume playing"
-  echo "[awsd] to move around"
+  echo "[hjkl] to move around (vi keys)"
   echo "g: select"
   echo "h: back"
   echo "v: show Version"
@@ -125,10 +125,10 @@ while read -s -n 1 command; do
 case "$command" in
   'o') readURL ;;
   'p') pauseResume ;;
-  'a') moveleft ;;
-  'w') moveup ;;
-  's') movedown ;;
-  'd') moveright ;;
+  'h') moveleft ;;
+  'k') moveup ;;
+  'j') movedown ;;
+  'l') moveright ;;
   'g') Iselect ;;
   'h') IBack ;;
   'v') echo "Script-Version: $VERSION";;
