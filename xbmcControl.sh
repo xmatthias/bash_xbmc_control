@@ -102,7 +102,7 @@ function usage {
   echo "p: pause/resume playing"
   echo "[hjkl] to move around (vi keys)"
   echo "g: select"
-  echo "h: back"
+  echo "b: back"
   echo "v: show Version"
   echo "?: show usage"
   echo "q: quit"
@@ -130,7 +130,7 @@ case "$command" in
   'j') movedown ;;
   'l') moveright ;;
   'g') Iselect ;;
-  'h') IBack ;;
+  'b') IBack ;;
   'v') echo "Script-Version: $VERSION";;
   '?') usage ;;
   'q') echo "quitting"; exit;;
